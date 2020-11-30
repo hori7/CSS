@@ -13,6 +13,15 @@
 
 </head>
 <body>
-  <h1>TEST</h1>
+  <h1 id="test">TEST</h1>
+  <script>
+    var test = document.getElementById('test');
+    var degree = 0;
+    function rotateHeader() {
+      degree = degree + 6;
+      test.style.transform = 'rotateX(' + degree + 'deg)';
+    }
+    setInterval(rotateHeader, 20);
+  </script>
 </body>
 </html>
