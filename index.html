@@ -3,39 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body{
-            background-color: lightblue;
-    }
-  </style>
-  <link rel="stylesheet" href="style.css"/>
-
+  <title>CSS</title>
 </head>
 <body>
-  <h1 id="test">TEST</h1>
-  <button onclick="test1()">test1</button>
-  <button onclick="reset()">reset</button>
-  <div id="test2">123</div>
+  <ol>
+    <li><a href="test.html">test</a></li>
+    <li><a href="table.html">table</a></li>
+  </ol>
 
-  <script>
-    var test = document.getElementById('test');
-    var degree = 0;
-    function rotateHeader() {
-      degree = degree + 3;
-      test.style.transform = 'rotateX(' + degree + 'deg)';
-    }
-    setInterval(rotateHeader, 20);
-
-    var test2 = document.getElementById('test2');
-    function test1() {
-      test2.innerHTML = "<p>こんばんわ！</p>";
-    }
-    function reset() {
-      test2.innerHTML = "";
-    }
-
-    
-  </script>
 </body>
 </html>
